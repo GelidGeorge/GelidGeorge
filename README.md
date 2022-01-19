@@ -6,7 +6,7 @@
   </a>
 </p>
 <h3 align="left">One can articulate with me in:</h3>
-&nbsp;&nbsp;&nbsp;&nbsp;<b>English, ಕನ್ನಡ (Kannada), ಕೊಂಕಣಿ (Konkani, not Goan), हिन्दी (Hindi, ahm! not a national language)</b>
+&nbsp;&nbsp;&nbsp;&nbsp;<b>English, ಕನ್ನಡ (Kannada), ಕೊಂಕಣಿ (Konkani), हिन्दी (Hindi)</b>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
   &nbsp;
@@ -80,7 +80,7 @@
   />
 </p>
 <h3> 😄  Pronouns: He/Him</h3>
-<h3> 🎓  Education: Graduate in Pure Science of St.Philomena's College, Mysore</h3>
+<h3> 🎓  Education: Graduate in Science [P.C.M] from St.Philomena's College, Mysore</h3>
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
   &nbsp;

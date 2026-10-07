@@ -1,6 +1,7 @@
 <h1 align="center">👋 Hi, I'm George Levin D'Souza</h1>
 <h2 align="center">ಜಾರ್ಜ್ ಲೆವಿನ್ ಡಿಸೋಜಾ</h2>
-<p align="center"><b>ಕಾಯಕವೇ ಕೈಲಾಸ</b> <sub>— ಬಸವಣ್ಣ</sub></p>
+<p align="center"><b>ಕಾಯಕವೇ ಕೈಲಾಸ</b> <sub>— ಬಸವಣ್ಣ</sub><br/>
+<b>ನಿನ್ನಂತೆಯೇ ಪರರನ್ನು ಪ್ರೀತಿಸು</b> <sub>— ಯೇಸು</sub></p>
 <p align="center"><i>From the chalkboard to the command line to the workshop floor: if it can be derived, it can be built.</i></p>
 <h3 align="center">Creative Technologist · Full-Stack Architect & Electro-Mechanical Technician · STEM Educator</h3>
 <p align="center"><i>He/Him</i></p>

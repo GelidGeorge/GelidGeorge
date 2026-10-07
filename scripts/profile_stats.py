@@ -14,6 +14,7 @@ Standard library only.
 """
 
 import argparse
+import base64
 import datetime as dt
 import gzip
 import json
@@ -83,6 +84,7 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
       totalCommitContributions
       totalPullRequestContributions
       totalIssueContributions
+      totalPullRequestReviewContributions
       restrictedContributionsCount
       contributionCalendar {
         totalContributions
@@ -142,6 +144,7 @@ def fetch_github(token, login):
         "commits_year": this_year["totalCommitContributions"] + this_year["restrictedContributionsCount"],
         "prs_year": this_year["totalPullRequestContributions"],
         "issues_year": this_year["totalIssueContributions"],
+        "reviews_year": this_year["totalPullRequestReviewContributions"],
         "languages": sorted(
             ({"name": n, "bytes": b, "color": lang_color[n]} for n, b in lang_bytes.items()),
             key=lambda l: -l["bytes"],
@@ -167,6 +170,44 @@ def fetch_stackoverflow(user_id):
         "gold": u["badge_counts"]["gold"],
         "silver": u["badge_counts"]["silver"],
         "bronze": u["badge_counts"]["bronze"],
+    }
+
+
+def fetch_wakatime(api_key=None, user=None):
+    """Coding time from WakaTime.
+
+    With an API key, reads the key owner's stats. Without one, falls back to
+    the public stats of `user` (works only if "public stats" is enabled in
+    the WakaTime profile settings).
+    """
+    who = "current" if api_key else user
+    if not who:
+        raise RuntimeError("no WakaTime API key or user")
+    headers = {"User-Agent": "profile-stats"}
+    if api_key:
+        headers["Authorization"] = "Basic " + base64.b64encode(api_key.encode()).decode()
+
+    def get(path):
+        req = urllib.request.Request(f"https://wakatime.com/api/v1/users/{who}/{path}", headers=headers)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.load(resp)["data"]
+
+    week = get("stats/last_7_days")
+    if not week.get("human_readable_total"):
+        raise RuntimeError("WakaTime stats are not ready yet")
+    try:
+        all_time = get("all_time_since_today")
+    except Exception:  # optional: not exposed for public-only access
+        all_time = {}
+    return {
+        "week": week["human_readable_total"],
+        "daily": week.get("human_readable_daily_average", ""),
+        "all_time": all_time.get("text", ""),
+        "since": (all_time.get("range") or {}).get("start_date", ""),
+        "languages": [
+            {"name": l["name"], "percent": l["percent"], "text": l["text"]}
+            for l in week.get("languages", [])[:5]
+        ],
     }
 
 
@@ -219,12 +260,13 @@ def stats_card(d, theme):
         ("Commits (last 12 months)", d["commits_year"]),
         ("Pull requests (last 12 months)", d["prs_year"]),
         ("Issues (last 12 months)", d["issues_year"]),
+        ("Code reviews (last 12 months)", d["reviews_year"]),
         ("Contributed to", d["contributed_to"]),
         ("Public repositories", d["repos"]),
     ]
     body = ""
     for i, (label, value) in enumerate(rows):
-        y = 70 + i * 22
+        y = 66 + i * 20
         body += (
             f'<text x="25" y="{y}" style="{FONT};font-size:14px" fill="{t["text"]}">{escape(label)}</text>'
             f'<text x="470" y="{y}" text-anchor="end" style="{FONT};font-size:14px;font-weight:700" '
@@ -330,12 +372,44 @@ def stackoverflow_card(so, theme):
     return card(495, 205, theme, "Stack Overflow", body)
 
 
+def wakatime_card(w, theme):
+    t = THEMES[theme]
+    cols = [(25, w["week"], "last 7 days"), (190, w["daily"], "daily average")]
+    if w["all_time"]:
+        cols.append((330, w["all_time"], f"since {w['since'][:10]}" if w["since"] else "all time"))
+    body = ""
+    for x, value, label in cols:
+        body += (
+            f'<text x="{x}" y="68" style="{FONT};font-size:15px;font-weight:700" fill="{t["accent"]}">'
+            f'{escape(value)}</text>'
+            f'<text x="{x}" y="86" style="{FONT};font-size:11px" fill="{t["muted"]}">{escape(label)}</text>'
+        )
+    for i, l in enumerate(w["languages"]):
+        y = 112 + i * 18
+        bar = 200 * l["percent"] / 100
+        body += (
+            f'<text x="25" y="{y}" style="{FONT};font-size:12px" fill="{t["text"]}">{escape(l["name"])}</text>'
+            f'<rect x="140" y="{y-9}" width="200" height="8" rx="4" fill="{t["border"]}"/>'
+            f'<rect x="140" y="{y-9}" width="{bar:.1f}" height="8" rx="4" fill="{t["title"]}"/>'
+            f'<text x="470" y="{y}" text-anchor="end" style="{FONT};font-size:11px" '
+            f'fill="{t["muted"]}">{escape(l["text"])}</text>'
+        )
+    return card(495, 205, theme, "Coding time (WakaTime)", body)
+
+
+def placeholder_card(title, theme):
+    return card(495, 205, theme, title, (
+        f'<text x="25" y="110" style="{FONT};font-size:14px" fill="{THEMES[theme]["muted"]}">'
+        'Stats will appear after the next update.</text>'))
+
+
 # ---------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--user", required=True)
     ap.add_argument("--stackoverflow", help="Stack Overflow numeric user id")
+    ap.add_argument("--wakatime-user", help="WakaTime username or user id (public stats fallback)")
     ap.add_argument("--out", default="dist")
     args = ap.parse_args()
 
@@ -357,6 +431,19 @@ def main():
             cards["stackoverflow"] = lambda th: stackoverflow_card(so, th)
         except Exception as exc:  # keep the GitHub cards even if SO is down
             print(f"warning: skipping Stack Overflow card: {exc}", file=sys.stderr)
+            if not os.path.exists(os.path.join(args.out, "stackoverflow-dark.svg")):
+                cards["stackoverflow"] = lambda th: placeholder_card("Stack Overflow", th)
+
+    if os.environ.get("WAKATIME_API_KEY") or args.wakatime_user:
+        try:
+            waka = fetch_wakatime(os.environ.get("WAKATIME_API_KEY"), args.wakatime_user)
+            cards["wakatime"] = lambda th: wakatime_card(waka, th)
+        except Exception as exc:
+            print(f"warning: skipping WakaTime card: {exc}", file=sys.stderr)
+            # Keep the last published card if there is one; otherwise draw a
+            # neutral placeholder so the README never shows a broken image.
+            if not os.path.exists(os.path.join(args.out, "wakatime-dark.svg")):
+                cards["wakatime"] = lambda th: placeholder_card("Coding time (WakaTime)", th)
 
     for name, render in cards.items():
         for theme in THEMES:

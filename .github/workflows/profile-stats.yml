@@ -31,12 +31,29 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Restore last published cards
+        # Start from the previous output so a temporarily failing source
+        # (WakaTime, Stack Overflow) keeps its last good card.
+        run: |
+          mkdir -p dist
+          if git fetch -q --depth 1 origin output; then
+            git --work-tree=dist checkout FETCH_HEAD -- .
+          fi
+
       - name: Render cards
         env:
           # Optional: a classic PAT with read:user in the STATS_TOKEN secret
           # also counts private contributions. Falls back to the built-in token.
           GITHUB_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
-        run: python3 scripts/profile_stats.py --user "${{ github.repository_owner }}" --stackoverflow 12537452 --out dist
+          # Optional: WakaTime API key (wakatime.com/settings/api-key) for the
+          # coding-time card. Without it the public stats of the user id are tried.
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: >-
+          python3 scripts/profile_stats.py
+          --user "${{ github.repository_owner }}"
+          --stackoverflow 12537452
+          --wakatime-user 5394cf5d-8882-4e01-809d-145c95c39fa9
+          --out dist
 
       - name: Publish to output branch
         env:

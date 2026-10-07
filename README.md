@@ -170,15 +170,18 @@ English · Kannada ಕನ್ನಡ · Konkani ಕೊಂಕಣಿ · Hindi हि
   <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="arduino" title="arduino" width="40" height="40"/></a>&nbsp;&nbsp;
 </p>
 <h2>📊 GitHub stats</h2>
-<!-- Cards are generated daily by .github/workflows/profile-stats.yml from the GitHub API -->
+<!-- Cards are generated daily by .github/workflows/profile-stats.yml from the GitHub, WakaTime and Stack Exchange APIs -->
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stats-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stats-light.svg" alt="GitHub stats" width="49%"/></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/streak-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/streak-light.svg" alt="Contribution streak" width="49%"/></picture>
 </p>
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/languages-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/languages-light.svg" alt="Most used languages" width="49%"/></picture>
-  <a href="https://stackoverflow.com/users/12537452/GelidGeorge"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stackoverflow-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stackoverflow-light.svg" alt="Stack Overflow" width="49%"/></picture></a>
+  <a href="https://wakatime.com/@5394cf5d-8882-4e01-809d-145c95c39fa9"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/wakatime-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/wakatime-light.svg" alt="Coding time (WakaTime)" width="49%"/></picture></a>
 </p>
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/contributions-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/contributions-light.svg" alt="Contribution graph" width="100%"/></picture>
+</p>
+<p align="center">
+  <a href="https://stackoverflow.com/users/12537452/GelidGeorge"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stackoverflow-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stackoverflow-light.svg" alt="Stack Overflow" width="49%"/></picture></a>
 </p>

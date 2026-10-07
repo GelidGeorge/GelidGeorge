@@ -1,7 +1,7 @@
 <h1 align="center">👋 Hi, I'm George Levin D'Souza</h1>
 <h2 align="center">ಜಾರ್ಜ್ ಲೆವಿನ್ ಡಿಸೋಜಾ</h2>
 <p align="center"><b>ದೇವರಿರಲಿ, ಇಲ್ಲದಿರಲಿ, ದುಡಿಮೆಯೇ ದಾರಿ, ತಪ್ಪೇ ಗುರು, ನ್ಯಾಯವೇ ನಿಲುವು, ಪ್ರೀತಿಯೇ ಉಸಿರು; ಬದುಕನ್ನು ಸವಿದು ಬದುಕು.</b></p>
-<p align="center"><b>ದೆವ್ ಆಸುಂ ವಾ ನಾಸುಂ, ವಾವ್ರ್‌ಚ್ ವಾಟ್, ಚೂಕ್‌ಚ್ ಗುರು, ನೀತ್‌ಚ್ ಥಾರಾವ್, ಮೋಗ್‌ಚ್ ಸ್ವಾಸ್; ಜಿಣ್ಯೆಚೊ ಸ್ವಾದ್ ಘೆವ್ನ್ ಜಿಯೆ.</b></p>
+<p align="center"><b>ದೇವ್ ಆಸುಂದಿ ಯಾ ನಾಸುಂದಿ, ವಾವ್ರ್‌ಚ್ ವಾಟ್, ಚೂಕ್‌ಚ್ ಗುರು, ನೀತ್‌ಚ್ ನಿರ್ಧಾರ್, ಮೋಗ್‌ಚ್ ಉಸ್ವಾಸ್; ಜಿಣ್ಯೆಚೊ ಸ್ವಾದ್ ಚಾಕುನ್ ಜಿಯೆ.</b></p>
 <p align="center"><i>From the chalkboard to the command line to the workshop floor: if it can be derived, it can be built.</i></p>
 <h3 align="center">Creative Technologist · Full-Stack Architect & Electro-Mechanical Technician · STEM Educator</h3>
 <p align="center"><i>He/Him</i></p>

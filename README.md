@@ -170,43 +170,15 @@ English · Kannada ಕನ್ನಡ · Konkani ಕೊಂಕಣಿ · Hindi हि
   <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="arduino" title="arduino" width="40" height="40"/></a>&nbsp;&nbsp;
 </p>
 <h2>📊 GitHub stats</h2>
+<!-- Cards are generated daily by .github/workflows/profile-stats.yml from the GitHub API -->
 <p align="center">
-    <a href="https://github.com/ryo-ma/github-profile-trophy">
-        <img src="https://github-profile-trophy.vercel.app/?username=GelidGeorge&theme=tokyonight" alt="GitHub trophies" />
-    </a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stats-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stats-light.svg" alt="GitHub stats" width="49%"/></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/streak-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/streak-light.svg" alt="Contribution streak" width="49%"/></picture>
 </p>
-<br/>
-<p>
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight"
-    alt="GitHub stats"
-    width="48%"
-  />
-  &nbsp;
-  &nbsp;
-  <img
-    src="https://streak-stats.demolab.com?user=GelidGeorge&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D"
-    alt="GitHub streak"
-    width="48%"
-  />
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/languages-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/languages-light.svg" alt="Most used languages" width="49%"/></picture>
+  <a href="https://stackoverflow.com/users/12537452/GelidGeorge"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stackoverflow-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stackoverflow-light.svg" alt="Stack Overflow" width="49%"/></picture></a>
 </p>
-<p>
-  <a href="https://stackoverflow.com/users/12537452/GelidGeorge" target="_blank">
-    <img
-      src="https://github-readme-stackoverflow.vercel.app/?userID=12537452&layout=compact"
-      alt="Stack Overflow"
-      width="40%"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight&layout=compact"
-    alt="Top languages"
-  />
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/contributions-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/contributions-light.svg" alt="Contribution graph" width="100%"/></picture>
 </p>
-<img
-  src="https://github-readme-stats.vercel.app/api/wakatime?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight"
-  alt="WakaTime stats"
-  width="48%"
-/>

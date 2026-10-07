@@ -11,11 +11,11 @@
 <p align="left">
   &nbsp;
   &nbsp;
-  <a href="https://twitter.com/GelidGeorge" target="blank">
+  <a href="https://x.com/GelidGeorge" target="blank">
     <img 
       align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
-      alt="GelidGeorge"
+      alt="X (Twitter)"
       height="30"
       width="40"
     />
@@ -26,7 +26,7 @@
     <img 
       align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-      alt="GelidGeorge"
+      alt="LinkedIn"
       height="30"
       width="40"
     />
@@ -37,7 +37,7 @@
     <img
       align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
-      alt="GelidGeorge"
+      alt="Instagram"
       height="30"
       width="40"
     />
@@ -48,7 +48,7 @@
     <img
       align="center"
       src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg"
-      alt="George Levin D'Souza"
+      alt="YouTube"
       height="30"
       width="40"
     />
@@ -62,20 +62,21 @@
 <br/>
 <p align="center">
     <a href="https://github.com/ryo-ma/github-profile-trophy">
-        <img src="https://github-profile-trophy.vercel.app/?username=GelidGeorge&theme=tokyonight" alt="GelidGeorge" />
+        <img src="https://github-profile-trophy.vercel.app/?username=GelidGeorge&theme=tokyonight" alt="GitHub trophies" />
     </a>
 </p>
 <br/>
 <p>
   <img
     src="https://github-readme-stats.vercel.app/api?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight"
+    alt="GitHub stats"
     width="48%"
   />
   &nbsp;
   &nbsp;
   <img
-    src="https://github-readme-streak-stats.herokuapp.com?user=GelidGeorge&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D"
-    alt="GelidGeorge"
+    src="https://streak-stats.demolab.com?user=GelidGeorge&theme=tokyonight&date_format=M%20j%5B%2C%20Y%5D"
+    alt="GitHub streak"
     width="48%"
   />
 </p>
@@ -83,397 +84,67 @@
 <h3> 🎓  Education: Graduate in Science [P.C.M] from St.Philomena's College, Mysore</h3>
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
-  &nbsp;
-  &nbsp;
-  <a href="https://developer.android.com" target="_blank">
-    <img
-      src="https://1.bp.blogspot.com/-LgTa-xDiknI/X4EflN56boI/AAAAAAAAPuk/24YyKnqiGkwRS9-_9suPKkfsAwO4wHYEgCLcBGAsYHQ/s0/image9.png"
-      alt="android"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;  
-  <a href="https://angulardart.xyz" target="_blank">
-    <img
-      src="https://angulardart.xyz/assets/shared/angular/icon/default-77f530ea0ef7066f55bd9466f5b7c50201e2f33b6dff9897c46bfa28f78d4bd4.svg"
-      alt="Angular Dart"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.arduino.cc/" target="_blank">
-    <img
-      src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
-      alt="arduino"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.blender.org/" target="_blank">
-    <img
-      src="https://download.blender.org/branding/blender_logo_socket.png"
-      alt="blender"
-      width="120"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://getbootstrap.com" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-      alt="bootstrap"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.chartjs.org" target="_blank">
-    <img
-      src="https://www.chartjs.org/media/logo-title.svg"
-      alt="chartjs"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://dart.dev" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"
-      alt="dart"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://flutter.dev" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"
-      alt="flutter"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://expressjs.com" target="_blank">
-    <img
-      src="https://expressjs.com/images/favicon.png"
-      alt="express"
-      width="40"
-      height="40"
-    />
-  </a>
+  <a href="https://developer.android.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" alt="android" title="android" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://pub.dev/packages/ngdart" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg" alt="AngularDart" title="AngularDart" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/arduino/arduino-original.svg" alt="arduino" title="arduino" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.blender.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="blender" title="blender" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" title="bootstrap" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/chartjs/chartjs-original.svg" alt="chartjs" title="chartjs" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://dart.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" alt="dart" title="dart" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://flutter.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" alt="flutter" title="flutter" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://expressjs.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="express" title="express" width="40" height="40"/></a>&nbsp;&nbsp;
   <br/>
   <br/>
-  &nbsp;
-  &nbsp;
-  <a href="https://firebase.google.com/" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
-      alt="firebase"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://cloud.google.com" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"
-      alt="gcp"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://git-scm.com/" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-      alt="git"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://graphql.org" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg"
-      alt="graphql"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://heroku.com" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
-      alt="heroku"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.w3.org/html/" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-      alt="html5"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.w3schools.com/css/" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-      alt="css3"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-      alt="javascript"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://sass-lang.com" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-      alt="sass"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://tailwindcss.com/" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-      alt="tailwind"
-      width="40"
-      height="40"
-    />
-  </a>
+  <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg" alt="firebase" title="firebase" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://cloud.google.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="gcp" title="gcp" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="git" title="git" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://graphql.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/graphql/graphql-plain.svg" alt="graphql" title="graphql" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://heroku.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg" alt="heroku" title="heroku" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="html5" title="html5" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="css3" title="css3" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" title="javascript" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://sass-lang.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" title="sass" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="tailwind" title="tailwind" width="40" height="40"/></a>&nbsp;&nbsp;
   <br/>
   <br/>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.jenkins.io" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg"
-      alt="jenkins"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.java.com" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
-      alt="java"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://kotlinlang.org" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg"
-      alt="kotlin"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.mongodb.com/" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"
-      alt="mongodb"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.mysql.com/" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-      alt="mysql"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://nodejs.org" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-      alt="nodejs"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://postman.com" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
-      alt="postman"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.python.org" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-      alt="python"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://reactjs.org/" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-      alt="react"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://redis.io" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg"
-      alt="redis"
-      width="40"
-      height="40"
-    />
-  </a>
+  <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jenkins/jenkins-original.svg" alt="jenkins" title="jenkins" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" title="java" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" alt="kotlin" title="kotlin" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" alt="mongodb" title="mongodb" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" alt="mysql" title="mysql" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://nodejs.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="nodejs" title="nodejs" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.postman.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postman/postman-original.svg" alt="postman" title="postman" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" title="python" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://react.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" title="react" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://redis.io" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg" alt="redis" title="redis" width="40" height="40"/></a>&nbsp;&nbsp;
   <br/>
   <br/>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.adobe.com/in/products/photoshop.html" target="_blank">
-    <img
-      src="https://www.adobe.com/content/dam/acom/one-console/icons_rebrand/ps_appicon.svg"
-      alt="photoshop"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank">
-    <img
-      src="https://www.adobe.com/content/dam/shared/images/product-icons/svg/illustrator.svg"
-      alt="illustrator"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.adobe.com/in/products/aftereffects.html" target="_blank">
-    <img
-      src="https://www.adobe.com/content/dam/cc/us/en/products/ccoverview/ae_cc_app_RGB.svg"
-      alt="aftereffects"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.adobe.com/products/xd.html" target="_blank">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/1024px-Adobe_XD_CC_icon.svg.png"
-      alt="xd"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.tensorflow.org" target="_blank">
-    <img
-      src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
-      alt="tensorflow"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.typescriptlang.org/" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
-      alt="typescript"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://unity.com/" target="_blank">
-    <img 
-      src="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.svg?v=3"
-      alt="unity"
-      width="40"
-      height="40"
-    />
-  </a>
-  &nbsp;
-  &nbsp;
-  <a href="https://www.unrealengine.com/en-US/" target="_blank">
-    <img 
-      src="https://cdn2.unrealengine.com/ue-logo-white-e34b6ba9383f.svg"
-      alt="unreal engine"
-      width="40"
-      height="40%"
-    />
-  </a>
+  <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-original.svg" alt="photoshop" title="photoshop" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/illustrator/illustrator-plain.svg" alt="illustrator" title="illustrator" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/aftereffects/aftereffects-original.svg" alt="aftereffects" title="aftereffects" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://helpx.adobe.com/xd/get-started.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-original.svg" alt="xd" title="xd" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" title="tensorflow" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" title="typescript" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://unity.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" alt="unity" title="unity" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.unrealengine.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unrealengine/unrealengine-original.svg" alt="unreal engine" title="unreal engine" width="40" height="40"/></a>&nbsp;&nbsp;
 </p>
 <p>
-  <a href="https://stackoverflow.com/users/12537452/GelidGeorge" target="_blank" align="left">
+  <a href="https://stackoverflow.com/users/12537452/GelidGeorge" target="_blank">
     <img
       src="https://github-readme-stackoverflow.vercel.app/?userID=12537452&layout=compact"
+      alt="Stack Overflow"
       width="40%"
     />
   </a>
   &nbsp;
   &nbsp;
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight&layout=compact" 
+    src="https://github-readme-stats.vercel.app/api/top-langs?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight&layout=compact"
+    alt="Top languages"
   />
 </p>
 <img
   src="https://github-readme-stats.vercel.app/api/wakatime?username=GelidGeorge&show_icons=true&locale=en&count_private=true&theme=tokyonight"
+  alt="WakaTime stats"
   width="48%"
 />

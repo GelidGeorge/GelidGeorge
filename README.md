@@ -1,7 +1,7 @@
-<h1 align="center">👋 Hi, I'm George (Levin) D'Souza</h1>
-<h2 align="center">ಜಾರ್ಜ್ (ಲೆವಿನ್) ಡಿಸೋಜಾ</h2>
+<h1 align="center">👋 Hi, I'm George Levin D'Souza</h1>
+<h2 align="center">ಜಾರ್ಜ್ ಲೆವಿನ್ ಡಿಸೋಜಾ</h2>
 <p align="center"><b>ನಮಸ್ಕಾರ್! ಹಾಂವ್ ಜಾರ್ಜ್. ಮ್ಹಜ್ಯಾ ಪ್ರೊಫೈಲಾಕ್ ಸ್ವಾಗತ್!</b><br/>
-<sub><i>Namaskar! Hanv George. Mhajya profilak swagat!</i> (Konkani: “Hello! I'm George. Welcome to my profile!”)</sub></p>
+<sub><i>Namaskar! Hanv George. Mhajya profilak swagat!</i> · “Hello! I'm George. Welcome to my profile!”</sub></p>
 <h3 align="center">Creative Technologist · Full-Stack Architect & Electro-Mechanical Technician · STEM Educator</h3>
 <p align="center"><i>He/Him</i></p>
 <p align="left">
@@ -44,7 +44,7 @@ Eight years across **software engineering**, **multimedia production** and **STE
 
 <h2>🗣️ Languages I speak</h2>
 
-English · ಕನ್ನಡ (Kannada) · ಕೊಂಕಣಿ (Konkani) · हिन्दी (Hindi)
+English · Kannada ಕನ್ನಡ · Konkani ಕೊಂಕಣಿ · Hindi हिन्दी
 
 <h2>🤝 Connect with me</h2>
 <p align="left">
@@ -56,7 +56,7 @@ English · ಕನ್ನಡ (Kannada) · ಕೊಂಕಣಿ (Konkani) · हि�
       <img
         align="center"
         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg"
-        alt="X (Twitter)"
+        alt="X"
         height="30"
         width="40"
       />

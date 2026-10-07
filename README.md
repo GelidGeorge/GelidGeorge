@@ -5,10 +5,13 @@
 <p align="center"><i>From the chalkboard to the command line to the workshop floor: if it can be derived, it can be built.</i></p>
 <h3 align="center">Creative Technologist · Full-Stack Architect & Electro-Mechanical Technician · STEM Educator</h3>
 <p align="center"><i>He/Him</i></p>
-<p align="left">
-  <a href="https://wakatime.com/@5394cf5d-8882-4e01-809d-145c95c39fa9">
-    <img src="https://wakatime.com/badge/user/5394cf5d-8882-4e01-809d-145c95c39fa9.svg" alt="Total time coded since Jan 6 2022" />
-  </a>
+<p align="center">
+  <a href="https://github.com/GelidGeorge?tab=followers"><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/badge-followers.svg" alt="Followers"/></a>
+  <a href="https://github.com/GelidGeorge?tab=repositories"><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/badge-stars.svg" alt="Stars"/></a>
+  <a href="https://github.com/GelidGeorge?tab=repositories"><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/badge-repos.svg" alt="Public repositories"/></a>
+  <img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/badge-since.svg" alt="On GitHub since"/>
+  <a href="https://stackoverflow.com/users/12537452/GelidGeorge"><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/badge-stackoverflow.svg" alt="Stack Overflow reputation"/></a>
+  <a href="https://wakatime.com/@5394cf5d-8882-4e01-809d-145c95c39fa9"><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/badge-wakatime.svg" alt="Coding time"/></a>
 </p>
 
 Eight years across **software engineering**, **multimedia production** and **STEM education**. I build custom, high-performance systems and turn complex theory into working code and practical automation.
@@ -171,6 +174,9 @@ English · Kannada ಕನ್ನಡ · Konkani ಕೊಂಕಣಿ · Hindi हि
 </p>
 <h2>📊 GitHub stats</h2>
 <!-- Cards are generated daily by .github/workflows/profile-stats.yml from the GitHub, WakaTime and Stack Exchange APIs -->
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/trophies-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/trophies-light.svg" alt="Trophies" width="100%"/></picture>
+</p>
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stats-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/stats-light.svg" alt="GitHub stats" width="49%"/></picture>
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/streak-dark.svg"/><img src="https://raw.githubusercontent.com/GelidGeorge/GelidGeorge/output/streak-light.svg" alt="Contribution streak" width="49%"/></picture>

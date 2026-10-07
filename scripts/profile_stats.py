@@ -19,6 +19,7 @@ import datetime as dt
 import gzip
 import json
 import os
+import re
 import sys
 import urllib.request
 from html import escape
@@ -125,10 +126,16 @@ def fetch_github(token, login):
         })["user"]["contributionsCollection"]
 
     days = {}
+    totals = {"commits": 0, "prs": 0, "issues": 0, "reviews": 0}
     cursor_start = start
     while cursor_start < now:
         cursor_end = min(cursor_start + dt.timedelta(days=365), now)
-        for week in collection(cursor_start, cursor_end)["contributionCalendar"]["weeks"]:
+        coll = collection(cursor_start, cursor_end)
+        totals["commits"] += coll["totalCommitContributions"] + coll["restrictedContributionsCount"]
+        totals["prs"] += coll["totalPullRequestContributions"]
+        totals["issues"] += coll["totalIssueContributions"]
+        totals["reviews"] += coll["totalPullRequestReviewContributions"]
+        for week in coll["contributionCalendar"]["weeks"]:
             for day in week["contributionDays"]:
                 days[day["date"]] = day["contributionCount"]
         cursor_start = cursor_end
@@ -145,6 +152,9 @@ def fetch_github(token, login):
         "prs_year": this_year["totalPullRequestContributions"],
         "issues_year": this_year["totalIssueContributions"],
         "reviews_year": this_year["totalPullRequestReviewContributions"],
+        "totals": totals,
+        "created": start.date().isoformat(),
+        "years": (now - start).days / 365.25,
         "languages": sorted(
             ({"name": n, "bytes": b, "color": lang_color[n]} for n, b in lang_bytes.items()),
             key=lambda l: -l["bytes"],
@@ -397,6 +407,86 @@ def wakatime_card(w, theme):
     return card(495, 205, theme, "Coding time (WakaTime)", body)
 
 
+# Rank ladder (C .. SSS) and the minimum value needed for each step.
+RANKS = ["C", "B", "A", "AA", "AAA", "S", "SS", "SSS"]
+TROPHIES = [
+    # (title, unit, key, thresholds)
+    ("Stars", "stars", "stars", [1, 10, 30, 50, 100, 200, 700, 2000]),
+    ("Commits", "commits", "commits", [1, 10, 100, 200, 500, 1000, 2000, 4000]),
+    ("Followers", "followers", "followers", [1, 10, 20, 50, 100, 200, 400, 1000]),
+    ("Repositories", "repos", "repos", [1, 10, 20, 30, 40, 50, 70, 100]),
+    ("Pull Requests", "PRs", "prs", [1, 10, 20, 50, 100, 200, 500, 1000]),
+    ("Issues", "issues", "issues", [1, 10, 20, 50, 100, 200, 500, 1000]),
+    ("Reviewer", "reviews", "reviews", [1, 10, 20, 50, 100, 200, 500, 1000]),
+    ("Streak", "days", "longest", [1, 7, 14, 30, 60, 100, 200, 365]),
+    ("Experience", "years", "years", [1, 2, 3, 4, 5, 7, 10, 15]),
+    ("Polyglot", "languages", "langs", [1, 3, 5, 7, 10, 12, 15, 20]),
+]
+RANK_COLORS = {"S": "#e8b923", "A": "#a8b2bd", "B": "#c47e3b", "C": "#c47e3b"}
+CUP_BODY = "M-13 -16h26v5c0 10-5 16-13 16s-13-6-13-16zM-2.5 5h5v6h6v4h-17v-4h6z"
+CUP_HANDLES = "M-13 -12h-5c0 6 3 9 7 9M13 -12h5c0 6-3 9-7 9"
+
+
+def trophy_metrics(d):
+    _, _, longest = streaks(d["days"])
+    t = d["totals"]
+    return {"stars": d["stars"], "commits": t["commits"], "followers": d["followers"],
+            "repos": d["repos"], "prs": t["prs"], "issues": t["issues"],
+            "reviews": t["reviews"], "longest": longest, "years": int(d["years"]),
+            "langs": len(d["languages"])}
+
+
+def rank_of(value, thresholds):
+    rank = None
+    for name, minimum in zip(RANKS, thresholds):
+        if value >= minimum:
+            rank = name
+    return rank
+
+
+def trophies_card(d, theme):
+    t = THEMES[theme]
+    metrics = trophy_metrics(d)
+    tile, gap, per_row, ox, oy = 110, 12, 5, 25, 55
+    body = ""
+    for i, (title, unit, key, thresholds) in enumerate(TROPHIES):
+        value = metrics[key]
+        rank = rank_of(value, thresholds)
+        col, row = i % per_row, i // per_row
+        x, y = ox + col * (tile + gap), oy + row * (tile + gap)
+        color = RANK_COLORS.get(rank[0], t["muted"]) if rank else t["border"]
+        body += (
+            f'<rect x="{x}" y="{y}" width="{tile}" height="{tile}" rx="8" fill="none" stroke="{t["border"]}"/>'
+            f'<g transform="translate({x + tile/2} {y + 38})" fill="{color}">'
+            f'<path d="{CUP_BODY}"/><path d="{CUP_HANDLES}" fill="none" stroke="{color}" stroke-width="2.5"/></g>'
+            f'<text x="{x + tile - 10}" y="{y + 20}" text-anchor="end" style="{FONT};font-size:13px;font-weight:800" '
+            f'fill="{color if rank else t["muted"]}">{rank or "–"}</text>'
+            f'<text x="{x + tile/2}" y="{y + 76}" text-anchor="middle" style="{FONT};font-size:12px;font-weight:600" '
+            f'fill="{t["text"]}">{title}</text>'
+            f'<text x="{x + tile/2}" y="{y + 94}" text-anchor="middle" style="{FONT};font-size:11px" '
+            f'fill="{t["muted"]}">{fmt(value)} {unit}</text>'
+        )
+    width = ox * 2 + per_row * tile + (per_row - 1) * gap
+    rows = -(-len(TROPHIES) // per_row)
+    return card(width, oy + rows * (tile + gap) + 13, theme, "Trophies", body)
+
+
+def badge(label, value, color="#0969da"):
+    """Shields-style flat badge; widths estimated for 11px Verdana."""
+    def w(text):
+        return int(len(text) * 6.6) + 12
+    lw, vw = w(label), w(value)
+    total = lw + vw
+    return (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{total}" height="20" role="img" '
+        f'aria-label="{escape(label)}: {escape(value)}"><title>{escape(label)}: {escape(value)}</title>'
+        f'<clipPath id="r"><rect width="{total}" height="20" rx="3"/></clipPath><g clip-path="url(#r)">'
+        f'<rect width="{lw}" height="20" fill="#555"/><rect x="{lw}" width="{vw}" height="20" fill="{color}"/></g>'
+        f'<g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" font-size="11">'
+        f'<text x="{lw/2}" y="14">{escape(label)}</text><text x="{lw + vw/2}" y="14">{escape(value)}</text></g></svg>'
+    )
+
+
 def placeholder_card(title, theme):
     return card(495, 205, theme, title, (
         f'<text x="25" y="110" style="{FONT};font-size:14px" fill="{THEMES[theme]["muted"]}">'
@@ -425,6 +515,7 @@ def main():
         "languages": lambda th: languages_card(data, th),
         "contributions": lambda th: contributions_card(data, th),
     }
+    so = waka = None
     if args.stackoverflow:
         try:
             so = fetch_stackoverflow(args.stackoverflow)
@@ -444,6 +535,29 @@ def main():
             # neutral placeholder so the README never shows a broken image.
             if not os.path.exists(os.path.join(args.out, "wakatime-dark.svg")):
                 cards["wakatime"] = lambda th: placeholder_card("Coding time (WakaTime)", th)
+
+    badges = {
+        "followers": ("followers", fmt(data["followers"]), "#0969da"),
+        "stars": ("stars", fmt(data["stars"]), "#e3b341"),
+        "repos": ("public repos", fmt(data["repos"]), "#2da44e"),
+        "since": ("on GitHub since", data["created"][:4], "#8250df"),
+    }
+    if so:
+        badges["stackoverflow"] = ("Stack Overflow", f"{fmt(so['reputation'])} rep", "#f48024")
+    elif args.stackoverflow and not os.path.exists(os.path.join(args.out, "badge-stackoverflow.svg")):
+        badges["stackoverflow"] = ("Stack Overflow", "–", "#f48024")
+    if waka:
+        # "1,912 hrs 7 mins" -> "1,912 hrs"; fall back to this week's total
+        hours = re.match(r"[\d,]+ hrs?", waka["all_time"])
+        badges["wakatime"] = ("coded", hours.group(0) if hours else f"{waka['week']} this week", "#1f2328")
+    elif not os.path.exists(os.path.join(args.out, "badge-wakatime.svg")):
+        badges["wakatime"] = ("coded", "–", "#1f2328")
+    for name, (label, value, color) in badges.items():
+        path = os.path.join(args.out, f"badge-{name}.svg")
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(badge(label, value, color))
+        print("wrote", path)
+    cards["trophies"] = lambda th: trophies_card(data, th)
 
     for name, render in cards.items():
         for theme in THEMES:

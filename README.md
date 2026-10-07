@@ -12,13 +12,16 @@
   &nbsp;
   &nbsp;
   <a href="https://x.com/GelidGeorge" target="blank">
-    <img 
-      align="center"
-      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg"
-      alt="X (Twitter)"
-      height="30"
-      width="40"
-    />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/icons/x-dark.svg"/>
+      <img
+        align="center"
+        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/twitter/twitter-original.svg"
+        alt="X (Twitter)"
+        height="30"
+        width="40"
+      />
+    </picture>
   </a>
   &nbsp;
   &nbsp;
@@ -96,7 +99,7 @@
   <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/chartjs/chartjs-original.svg" alt="chartjs" title="chartjs" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://dart.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" alt="dart" title="dart" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://flutter.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg" alt="flutter" title="flutter" width="40" height="40"/></a>&nbsp;&nbsp;
-  <a href="https://expressjs.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="express" title="express" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://expressjs.com" target="_blank" rel="noreferrer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/express-dark.svg"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" alt="express" title="express" width="40" height="40"/></picture></a>&nbsp;&nbsp;
   <br/>
   <br/>
   <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-original.svg" alt="firebase" title="firebase" width="40" height="40"/></a>&nbsp;&nbsp;
@@ -124,13 +127,13 @@
   <br/>
   <br/>
   <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-original.svg" alt="photoshop" title="photoshop" width="40" height="40"/></a>&nbsp;&nbsp;
-  <a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/illustrator/illustrator-plain.svg" alt="illustrator" title="illustrator" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/illustrator/illustrator-original.svg" alt="illustrator" title="illustrator" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/aftereffects/aftereffects-original.svg" alt="aftereffects" title="aftereffects" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://helpx.adobe.com/xd/get-started.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-original.svg" alt="xd" title="xd" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" title="tensorflow" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" title="typescript" width="40" height="40"/></a>&nbsp;&nbsp;
-  <a href="https://unity.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" alt="unity" title="unity" width="40" height="40"/></a>&nbsp;&nbsp;
-  <a href="https://www.unrealengine.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unrealengine/unrealengine-original.svg" alt="unreal engine" title="unreal engine" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://unity.com/" target="_blank" rel="noreferrer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/unity-dark.svg"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" alt="unity" title="unity" width="40" height="40"/></picture></a>&nbsp;&nbsp;
+  <a href="https://www.unrealengine.com/" target="_blank" rel="noreferrer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/unrealengine-dark.svg"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unrealengine/unrealengine-original.svg" alt="unreal engine" title="unreal engine" width="40" height="40"/></picture></a>&nbsp;&nbsp;
 </p>
 <p>
   <a href="https://stackoverflow.com/users/12537452/GelidGeorge" target="_blank">

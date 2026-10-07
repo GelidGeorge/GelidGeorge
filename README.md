@@ -1,7 +1,7 @@
 <h1 align="center">👋 Hi, I'm George Levin D'Souza</h1>
 <h2 align="center">ಜಾರ್ಜ್ ಲೆವಿನ್ ಡಿಸೋಜಾ</h2>
-<p align="center"><b>ನಮಸ್ಕಾರ್! ಹಾಂವ್ ಜಾರ್ಜ್. ಮ್ಹಜ್ಯಾ ಪ್ರೊಫೈಲಾಕ್ ಸ್ವಾಗತ್!</b><br/>
-<sub><i>Namaskar! Hanv George. Mhajya profilak swagat!</i> · “Hello! I'm George. Welcome to my profile!”</sub></p>
+<p align="center"><b>ದೇವ್ ಬರೆಂ ಕರುಂ</b></p>
+<p align="center"><i>From the chalkboard to the command line to the workshop floor: if it can be derived, it can be built.</i></p>
 <h3 align="center">Creative Technologist · Full-Stack Architect & Electro-Mechanical Technician · STEM Educator</h3>
 <p align="center"><i>He/Him</i></p>
 <p align="left">

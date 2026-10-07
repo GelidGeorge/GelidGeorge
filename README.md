@@ -1,12 +1,6 @@
 <h1 align="center">👋 Hi, I'm George Levin D'Souza</h1>
 <h2 align="center">ಜಾರ್ಜ್ ಲೆವಿನ್ ಡಿಸೋಜಾ</h2>
-<p align="center"><b>ಕಾಯಕವೇ ಕೈಲಾಸ</b> <sub>— ಬಸವಣ್ಣ</sub><br/>
-<b>ಕರ್ಮಣ್ಯೇವಾಧಿಕಾರಸ್ತೇ ಮಾ ಫಲೇಷು ಕದಾಚನ</b> <sub>— ಕೃಷ್ಣ</sub><br/>
-<b>ನಿನ್ನಂತೆಯೇ ಪರರನ್ನು ಪ್ರೀತಿಸು</b> <sub>— ಯೇಸು</sub></p>
-<p align="center"><b>ದೇವರಿರಲಿ, ಇಲ್ಲದಿರಲಿ —<br/>
-ದುಡಿಮೆಯೇ ದಾರಿ, ತಪ್ಪೇ ಗುರು,<br/>
-ನ್ಯಾಯವೇ ನಿಲುವು, ಪ್ರೀತಿಯೇ ಉಸಿರು;<br/>
-ಬದುಕನ್ನು ಸವಿದು ಬದುಕು.</b></p>
+<p align="center"><b>ದೇವರಿರಲಿ, ಇಲ್ಲದಿರಲಿ, ದುಡಿಮೆಯೇ ದಾರಿ, ತಪ್ಪೇ ಗುರು, ನ್ಯಾಯವೇ ನಿಲುವು, ಪ್ರೀತಿಯೇ ಉಸಿರು; ಬದುಕನ್ನು ಸವಿದು ಬದುಕು.</b></p>
 <p align="center"><i>From the chalkboard to the command line to the workshop floor: if it can be derived, it can be built.</i></p>
 <h3 align="center">Creative Technologist · Full-Stack Architect & Electro-Mechanical Technician · STEM Educator</h3>
 <p align="center"><i>He/Him</i></p>

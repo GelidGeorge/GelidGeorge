@@ -81,7 +81,11 @@
   />
 </p>
 <h3> 😄  Pronouns: He/Him</h3>
-<h3> 🎓  Education: Graduate in Science [P.C.M] from St.Philomena's College, Mysore</h3>
+<h3> 🎓  Education:</h3>
+<ul>
+  <li><b>Bachelor of Science (B.Sc.)</b> in Physics, Chemistry and Mathematics [P.C.M], St. Philomena's College, Mysore</li>
+  <li><b>Bachelor of Education (B.Ed.)</b> with pedagogy in Physical Science and Mathematics [P.M]</li>
+</ul>
 <h3 align="left">Languages and Tools:</h3>
 <p align="left">
   <a href="https://developer.android.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg" alt="android" title="android" width="40" height="40"/></a>&nbsp;&nbsp;

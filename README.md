@@ -130,6 +130,11 @@
   <a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/illustrator/illustrator-original.svg" alt="illustrator" title="illustrator" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://www.adobe.com/products/aftereffects.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/aftereffects/aftereffects-original.svg" alt="aftereffects" title="aftereffects" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://helpx.adobe.com/xd/get-started.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xd/xd-original.svg" alt="xd" title="xd" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://www.figma.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" title="figma" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://procreate.com" target="_blank" rel="noreferrer"><img src="assets/icons/procreate.svg" alt="procreate" title="procreate" width="40" height="40"/></a>&nbsp;&nbsp;
+  <a href="https://rive.app" target="_blank" rel="noreferrer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/rive-dark.svg"/><img src="assets/icons/rive.svg" alt="rive" title="rive" width="40" height="40"/></picture></a>&nbsp;&nbsp;
+  <br/>
+  <br/>
   <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" alt="tensorflow" title="tensorflow" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" title="typescript" width="40" height="40"/></a>&nbsp;&nbsp;
   <a href="https://unity.com/" target="_blank" rel="noreferrer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/icons/unity-dark.svg"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" alt="unity" title="unity" width="40" height="40"/></picture></a>&nbsp;&nbsp;

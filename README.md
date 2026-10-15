@@ -43,8 +43,8 @@ Eight years across **software engineering**, **multimedia production** and **STE
 
 <h2>🎓 Education</h2>
 
-- **B.Sc.** in Physics, Chemistry and Mathematics
-- **B.Ed.** with pedagogy in Physics and Mathematics
+- **B.Sc.,** Physics, Chemistry and Mathematics
+- **B.Ed.,** Physics and Mathematics pedagogy
 
 <h2>🗣️ Languages I speak</h2>
 
